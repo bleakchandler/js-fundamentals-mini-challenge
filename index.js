@@ -117,9 +117,9 @@ const users = [
 function printNameAndPhones(users) {
 
   for (let i = 0; i < users.length; ++i) {
-    for (var key in users[i]) {
-          console.log(users[i][key]);
-    }
+        console.log(users[i].name);
+        console.log("Cell:", users[i].phones.cell);
+        console.log("Office:", users[i].phones.office);
   }
 }
 
